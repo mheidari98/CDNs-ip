@@ -1,0 +1,39 @@
+name: update CDN CIDR
+
+# schedule every 1 hour to update CDN CIDR
+on:
+  schedule:
+    - cron: '0 * * * *'
+
+jobs:
+  updateCDN:
+    runs-on: ubuntu-latest
+    
+    steps:
+
+      # https://github.com/actions/checkout
+      - uses: actions/checkout@v3
+
+      - name: download CDN CIDR
+        run: |
+          curl -s https://www.arvancloud.ir/fa/ips.txt > arvan_ipv4.txt
+          curl -s https://www.cloudflare.com/ips-v4 > cloudflare_ipv4.txt
+          curl -s https://www.cloudflare.com/ips-v6 > cloudflare_ipv6.txt
+      
+      - name: Get current date
+        id: date
+        #run: echo "::set-output name=date::$(TZ=Asia/Tehran date +'%s')"
+        run: echo "date=$(TZ=Asia/Tehran date +'%Y/%m/%d %R')" >> $GITHUB_OUTPUT
+      
+      # https://github.com/stefanzweifel/git-auto-commit-action
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update CDN CIDR at ${{ steps.date.outputs.date }}"
+          commit_options: '--no-verify --signoff'
+          commit_user_name: "mheidari98"
+          commit_user_email: "mahdih3idari@gmail.com"
+          # commit_author: Author <actions@github.com> 
+
+          
+
+
