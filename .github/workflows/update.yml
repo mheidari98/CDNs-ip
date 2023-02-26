@@ -24,6 +24,16 @@ jobs:
           curl -s https://api.gcorelabs.com/cdn/public-ip-list | jq ".addresses[]" | sed 's/"//g' > gcore_ipv4.txt
           curl -s https://api.gcorelabs.com/cdn/public-ip-list | jq ".addresses_v6[]" | sed 's/"//g' > gcore_ipv6.txt
       
+      - name: sort
+        run: |
+          sort -n -t . -k 1,1 -k 2,2 -k 3,3 -k 4,4 arvan_ipv4.txt -o arvan_ipv4.txt
+          sort -n -t . -k 1,1 -k 2,2 -k 3,3 -k 4,4 cloudflare_ipv4.txt -o cloudflare_ipv4.txt
+          sort -n -t . -k 1,1 -k 2,2 -k 3,3 -k 4,4 aws_ipv4.txt -o aws_ipv4.txt
+          sort -n -t . -k 1,1 -k 2,2 -k 3,3 -k 4,4 gcore_ipv4.txt -o gcore_ipv4.txt
+          sort -n -t : -k 1,1 -k 2,2 -k 3,3 -k 4,4 -k 5,5 -k 6,6 -k 7,7 -k 8,8 cloudflare_ipv6.txt -o cloudflare_ipv6.txt
+          sort -n -t : -k 1,1 -k 2,2 -k 3,3 -k 4,4 -k 5,5 -k 6,6 -k 7,7 -k 8,8 aws_ipv6.txt -o aws_ipv6.txt
+          sort -n -t : -k 1,1 -k 2,2 -k 3,3 -k 4,4 -k 5,5 -k 6,6 -k 7,7 -k 8,8 gcore_ipv6.txt -o gcore_ipv6.txt
+
       - name: Get current date
         id: date
         #run: echo "::set-output name=date::$(TZ=Asia/Tehran date +'%s')"
