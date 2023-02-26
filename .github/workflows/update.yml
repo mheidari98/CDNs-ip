@@ -19,6 +19,10 @@ jobs:
           curl -s https://www.arvancloud.ir/fa/ips.txt > arvan_ipv4.txt
           curl -s https://www.cloudflare.com/ips-v4 > cloudflare_ipv4.txt
           curl -s https://www.cloudflare.com/ips-v6 > cloudflare_ipv6.txt
+          curl -s https://ip-ranges.amazonaws.com/ip-ranges.json | jq ".prefixes[].ip_prefix" | sed 's/"//g' > aws_ipv4.txt
+          curl -s https://ip-ranges.amazonaws.com/ip-ranges.json | jq ".ipv6_prefixes[].ipv6_prefix" | sed 's/"//g' > aws_ipv6.txt
+          curl -s https://api.gcorelabs.com/cdn/public-ip-list | jq ".addresses[]" | sed 's/"//g' > gcore_ipv4.txt
+          curl -s https://api.gcorelabs.com/cdn/public-ip-list | jq ".addresses_v6[]" | sed 's/"//g' > gcore_ipv6.txt
       
       - name: Get current date
         id: date
