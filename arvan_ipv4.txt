@@ -1,7 +1,15 @@
- </div></div></div><div class="error-section__separator"></div><div class="error-section__contents error-section__contents--admin"><div class="error-section__content error-section__content--admin"><div class="error-section__content-title">Are you the admin of this website?</div><div class="error-section__content-subtitle error-section__content-subtitle--admin">Please ensure that your origin server is available, and ArvanCloud’s IP addresses are allowed to connect to your host.
- </div></div></div><div class="error-section__separator"></div><div class="error-section__contents error-section__contents--admin"><div class="error-section__content error-section__content--admin"><div class="error-section__content-title">مدیر این وب‌سایت هستید؟</div><div class="error-section__content-subtitle error-section__content-subtitle--admin">از در دسترس بودن سرور اصلی سایت خود و Whitelist شدنIPهای ابر آروان در سرور اصلی یا شرکت هاستینگ خود اطمینان پیدا کنید.
- </div></div><div class="error-section__content error-section__content--user"><div class="error-section__content-title">How to fix this error?</div><div class="error-section__content-subtitle error-section__content-subtitle--user">Wait a few minutes and refresh the page. If you continue to encounter this error, contact the administrators of arvancloud.ir.
- </div></div><div class="error-section__content error-section__content--user"><div class="error-section__content-title">برای رفع این خطا چه باید کرد؟</div><div class="error-section__content-subtitle error-section__content-subtitle--user">چند دقیقه صبر کنید و دوباره صفحه را باز کنید. اگر هم‌چنان با این خطا روبه‌رو می‌شوید، با مدیر سایت arvancloud.ir  تماس بگیرید.
-<!DOCTYPE html><html lang="en"><head title><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link href="https://www.arvancloud.ir/css/new-error-page.css" rel="stylesheet"><link rel="icon" type="image/x-icon" href="https://www.arvancloud.ir/favicon-en.ico"><title></title></head><body><section class="error-section error-section--ltr error-section--hide error-section--502" id="en"><div class="container container--min-white-space"><div class="error-section__main error-section__main--502"><div class="error-section__information error-section__information--502-small"><h1 class="error-section__title error-section__title--502">Error 500</h1><h2 class="error-section__subtitle error-section__subtitle--502">Bad Gateway!</h2></div><div class="error-section__information--502-big"><div class="error-section__contents error-section__contents--user"><div class="error-section__content error-section__content--user"><div class="error-section__content-title">Why am I seeing this error?</div><div class="error-section__content-subtitle error-section__content-subtitle--user">The connection between ArvanCloud's network and the origin web server has failed.
-<a class="error-section__help-link" href="https://blog.arvancloud.ir/what-is-the-arvancloud-error-and-how-can-it-be-resolved/">Read more</a></div></div></div></div></div></div></section><section class="error-section error-section--hide error-section--502" id="fa"><div class="container container--min-white-space"><div class="error-section__main error-section__main--502"><div class="error-section__information error-section__information--502-small"><h1 class="error-section__title error-section__title--502">خطای ۵۰۰</h1><h2 class="error-section__subtitle error-section__subtitle--502">سرور اصلی وب‌سایت مورد نظر شما در دسترس نیست!</h2></div><div class="error-section__information--502-big"><div class="error-section__contents error-section__contents--user"><div class="error-section__content error-section__content--user"><div class="error-section__content-title">چرا این خطا را مشاهده می‌کنید؟</div><div class="error-section__content-subtitle error-section__content-subtitle--user">سرو اصلی سایت arvancloud.ir هم‌اکنون از دسترس خارج شده است و نمی‌تواند به درخواست شما پاسخ دهد.
-<a class="error-section__help-link" href="https://www.arvancloud.ir/help/fa/article/360033792034-خطای-در دسترس-نبودن-سرور-اصلی-وب‌سایت-چیست-و-چگونه-رفع-می‌شود">لینک راهنما</a></div></div></div></div></div></div></section><script src="https://www.arvancloud.ir/js/app-error-page.js"></script></body></html>
+2.144.3.128/28
+37.32.16.0/27
+37.32.17.0/27
+37.32.18.0/27
+37.32.19.0/27
+89.45.48.64/28
+92.114.16.80/28
+94.101.182.0/27
+94.182.153.24/29
+94.182.182.28/30
+109.230.200.48/29
+185.143.232.0/22
+185.215.232.0/22
+185.228.238.0/28
+188.229.116.16/29
